@@ -1,5 +1,7 @@
-import axios from 'axios';
+import axios from "axios";
+
+const hostName = window.location.hostname;
 
 export const api = axios.create({
-  baseURL: 'http://localhost:3333',
+  baseURL: `http://${hostName}:3333`,
 });
